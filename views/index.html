@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-quiv="X-UA-compatible" content="ie-edge">
+    <title>Weather App</title>
+    <script src="Weatherapp.js" defer></script>
+    <link
+    href="Weatherapp.css"
+    rel="stylesheet"
+    type="text/css"
+    media="all"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="Circle final.png"/>
+ </head>
+ <body>
+    <section id="allContent">
+        <header id="header">
+            <h1 id="title">
+                Made by Kai McFarlane
+            </h1>
+        </header>
+        <section id="searchBar">
+        <div id="outerBox">
+            <h1 id="buttonTitle">
+                WEATHER 
+                <img alt="" src="Circle final.png" width="50px" height="50px" id="WFImg">
+                FORECAST
+            </h1>
+            <div id="searchBox" class="searchBox">
+                <input class="searchInput"type="text" name="" placeholder="Enter a city">
+                <button id="cityButton" class="searchButton" href="#" onclick="search()">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </button>
+            </div>
+            <div id="speciForecast">
+                <div id="tempFeel" class="speciBox">
+                    <img alt="" src="tempHot.png" class="speciIcon" width="30px" height="30px">
+                    <h1 class="speciTitle">Temperature</h1>
+                    <h1 class="speciText"></h1>
+                </div>
+                <div id="humidityBox" class="speciBox">
+                    <img alt="" src="humidity.png" class="speciIcon" width="30px" height="30px">
+                    <h1 class="speciTitle">Humidity</h1>
+                    <h1 class="speciText"></h1>
+                </div>
+                <div id="pressureBox" class="speciBox">
+                    <img alt="" src="pressure.png" class="speciIcon" width="30px" height="30px">
+                    <h1 class="speciTitle">Pressure</h1>
+                    <h1 class="speciText"></h1>
+                </div>
+                <div id="sunriseBox" class="speciBox">
+                    <img alt="" src="sunrise.png" class="speciIcon" width="30px" height="30px">
+                    <h1 class="speciTitle">Sunrise</h1>
+                    <h1 class="speciText"></h1>
+                </div>
+                <div id="sunsetBox" class="speciBox">
+                    <img alt="" src="sunset.png" class="speciIcon" width="30px" height="30px">
+                    <h1 class="speciTitle">Sunset</h1>
+                    <h1 class="speciText"></h1>
+                </div>
+                <div id="visBox" class="speciBox">
+                    <img alt="" src="visibility.png" class="speciIcon" width="30px" height="30px">
+                    <h1 class="speciTitle">Visibility</h1>
+                    <h1 class="speciText"></h1>
+                </div>
+                <div id="windBox" class="speciBox">
+                    <img alt="" src="wind.png" class="speciIcon" width="30px" height="30px">
+                    <h1 class="speciTitle">Wind</h1>
+                    <h1 class="speciText"></h1>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="weatherInfo">
+                <p id="temperature">#</p>
+            <div id="midInfo">
+                <p id="location"></p>
+                <p id="time"></p>
+            </div>
+            <div id="endInfo">
+                <p id="icon">
+                    <img id="iconPic" alt="" src="cloudyMoon.png">
+                </p>
+                <p id="report"></p>
+            </div>
+        </section>
+    </section>
+</body>

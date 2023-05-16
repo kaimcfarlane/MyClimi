@@ -1,0 +1,275 @@
+* {
+  animation-iteration-count: infinite;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  margin: 0px;
+  background-image: url("lifeSunny2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  animation: changeBg 25s infinite;
+}
+
+@keyframes changeBg {
+  0%,
+  100% {
+    background-image: url("hillyDay1.jpg");
+  }
+  18% {
+    background-image: url("hillyDay2.jpg");
+  }
+  36% {
+    background-image: url("hillyDay3.jpg");
+  }
+  54% {
+    background-image: url("sunnyHilly5.jpg");
+  }
+  72% {
+    background-image: url("lifeSunny1.jpg");
+  }
+  88% {
+    background-image: url("lifeSunny2.jpg");
+  }
+}
+
+#allContent {
+  z-index: 1;
+  position: relative;
+}
+
+#header {
+  margin-top: -25px;
+}
+
+#title {
+  font-size: 30px;
+  color: #ccc;
+  background: rgba(110, 110, 110, 00.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+#searchBar {
+  display: flex;
+  justify-content: center;
+}
+
+#outerBox {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+ 
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 238px;
+}
+
+#buttonTitle {
+  margin-top: -82px;
+  font-size: 30px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+#WFImg {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#searchBox {
+ 
+  margin-top: 10px;
+}
+
+#cityButton {
+  cursor: pointer;
+}
+
+#speciForecast {
+  display: none;
+  margin-top: 98px;
+}
+
+.speciBox {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#location,
+#icon,
+#time,
+#report {
+ 
+  font-size: 35px;
+}
+
+#temperature,
+#icon,
+#time {
+  margin: 0 20px;
+}
+
+#temperature {
+ 
+  font-size: 150px;
+}
+
+p {
+  margin: 0;
+}
+
+#iconPic {
+  width: 50px;
+  height: 50px;
+}
+
+#weatherInfo {
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  display: flex;
+  display: none;
+  justify-content: space-between;
+  padding: 2em 3em 1em 0em;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  margin-left: 25px;
+}
+
+#weatherInfo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 9px;
+}
+
+#time {
+  padding-top: 10px;
+}
+
+#endInfo {
+  margin-top: -21px;
+}
+
+#icon {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+.searchBox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.searchBox:hover > .searchInput {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color: #2f3640;
+}
+
+.searchButton {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+@media screen and (max-width: 620px) {
+  .searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
